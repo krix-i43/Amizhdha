@@ -2708,7 +2708,7 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
                                 loop = asyncio.get_event_loop()
                                 with ThreadPoolExecutor() as executor:
                                     name_result = await loop.run_in_executor(executor, get_player_name, sir)
-                                    msg_result = f"Hello {name_result}"
+                                    msg_result = f"Hello[B][C]{get_random_color()} {name_result}"
 
                                 await safe_send_message(response.Data.chat_type, msg_result, uid, chat_id, key, iv)
 
